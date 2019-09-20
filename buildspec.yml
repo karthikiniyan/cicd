@@ -23,7 +23,7 @@ phases:
       - echo Build completed on `date`
        -aws s3 cp ${BUILD_FOLDER} s3://${S3_BUCKET} --recursive
     artifacts:
-        files:
-            - '**/*'
-        base-directory: 'dist/*'   
+     files:
+     base-directory: 'dist*'
+     discard-paths: yes   
 
