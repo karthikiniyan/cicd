@@ -1,4 +1,8 @@
 version: 0.2
+env:
+    variables:
+        CACHE_CONTROL: "86400"
+        BUILD_ENV: "prod"
 phases:
     install:
         commands:
