@@ -1,15 +1,16 @@
 version: 0.2
 env:
- phases:
-  install:
-    runtime-versions:
-      nodejs: 10
-  pre_build:
-    commands:
-  build:
-    commands:
-      - echo Build started on `date`
-      - ng build --prod --aot
+phases:
+    install:
+        commands:
+            - echo Installing source NPM dependencies...
+            - npm install
+            - npm install -g @angular/cli
+    build:
+        commands:
+            - echo Build started on `date`
+            - ng build --${BUILD_ENV}
+
   post_build:
      commands:
       - echo Build completed on `date`
