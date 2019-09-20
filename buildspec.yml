@@ -3,7 +3,7 @@ env:
     variables:
         CACHE_CONTROL: "86400"
         BUILD_ENV: "prod"
-        S3_BUCKET : "cicdoutputartifact/BuildOutput"
+        S3_BUCKET : "cicdoutputartifact"
         BUILD_FOLDER : "Dist"
 phases:
     install:
