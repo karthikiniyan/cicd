@@ -4,7 +4,7 @@ env:
         CACHE_CONTROL: "86400"
         BUILD_ENV: "prod"
         S3_BUCKET : "cioutput"
-        BUILD_FOLDER : "Dist"
+        BUILD_FOLDER : "dist"
 phases:
     install:
         runtime-versions:
