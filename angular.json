@@ -20,6 +20,9 @@
             "tsConfig": "tsconfig.app.json",
             "aot": false,
             "assets": [
+               "src/scripts",
+              "src/app.js",
+              "src/appspec.yml",
               "src/favicon.ico",
               "src/assets"
             ],
