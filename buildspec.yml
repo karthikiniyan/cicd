@@ -4,7 +4,7 @@ env:
         CACHE_CONTROL: "86400"
         BUILD_ENV: "prod"
         S3_BUCKET : "cicdoutputartifact"
-        BUILD_FOLDER : "Dist/CiCdPipeline"
+        BUILD_FOLDER : "Dist"
 phases:
     install:
         runtime-versions:
@@ -21,9 +21,11 @@ phases:
      commands:
       - echo Build completed on `date`
        -aws s3 cp ${BUILD_FOLDER} s3://${S3_BUCKET} --recursive
-artifacts:    
-  files:
-    - '*/*'
-    - appspec.yml
-  base-directory: 'dist*'
+artifacts: 
+  base-directory: dist*
+  files: 
+    - "*/*"
+    - 'appspec.yml'
+    - 'scripts'
+
 
