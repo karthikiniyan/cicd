@@ -27,5 +27,6 @@ artifacts:
     - "*/*"
     - 'appspec.yml'
     - 'scripts'
+    - 'app.js'
 
 
