@@ -23,6 +23,7 @@
                "src/scripts",
               "src/app.js",
               "src/appspec.yml",
+              "src/application_start.sh",
               "src/favicon.ico",
               "src/assets"
             ],
