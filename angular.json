@@ -22,7 +22,7 @@
             "assets": [
                "src/scripts",
               "src/app.js",
-              "src/appspec.yaml",
+              "src/appspec.yml",
               "src/favicon.ico",
               "src/assets"
             ],
@@ -85,7 +85,7 @@
             "assets": [
               "src/scripts",
               "src/app.js",
-              "src/appspec.yaml",
+              "src/appspec.yml",
               "src/favicon.ico",
               "src/assets"
             ],
